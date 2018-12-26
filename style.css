@@ -1,0 +1,35 @@
+body {
+  background-color: #050505;
+  font-family: 'Lucida Sans Unicode' ,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',  Geneva, Verdana, sans-serif
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 15px solid;
+  background-color: #f3f3f3;
+  border-color: #050505;
+  border-radius: 55px;
+}
+
+.img {
+  height: 170px;
+  width: 170px;
+}
+.won {
+  color: green !important;
+}
+.lost {
+  color: red !important;
+}
+
+.btn:active {
+  background-color: transparent;
+  box-shadow: 0 10px transparent;
+  transform: translateY(9px);
+}
+
+
