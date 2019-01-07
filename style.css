@@ -31,5 +31,33 @@ body {
   box-shadow: 0 10px transparent;
   transform: translateY(9px);
 }
+@media (max-width: 479px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 19px solid;
+    background-color: #f3f3f3;
+    border-color: #050505;
+    border-radius: 55px;
+  }
 
+  h1.display-1{
+    font-size:50px !important;
+  }
 
+  h1.display-3{
+    font-size: 30px !important;
+  }
+
+  .img{
+    height: 140px;
+    width: 140px;
+  }
+
+ 
+  
+}

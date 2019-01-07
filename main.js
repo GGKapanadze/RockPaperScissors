@@ -13,12 +13,12 @@ $(document).ready(function() {
       $("#scissorss").css({ "border": "8px solid red", "border-radius": "95px" });
       me++;
       $(".result").html(`
-                <h1 class="display-3">  Y ${me} : ${ai}  AI</h1> 
+                <h1 class="display-3">  You ${me} : ${ai}  AI </h1> 
            `);
     } else if (judge(choice, aiChoice()) === "Tie") {
       $("#rockk").css({ "border": "8px solid blue", "border-radius": "95px" });
       $(".result").html(`
-                <h1 class="display-3">  Y ${me} : ${ai}  AI </h1> 
+                <h1 class="display-3">  You ${me} : ${ai}  AI </h1> 
                 <h1 class="h5">Tie</h1>   
             `);
     } else {
@@ -26,7 +26,7 @@ $(document).ready(function() {
       $("#paperr").css({ "border": "8px solid green", "border-radius": "95px" });
       ai++;
       $(".result").html(`
-                <h1 class="display-3">  Y ${me} : ${ai} AI  </h1>    
+                <h1 class="display-3">  You ${me} : ${ai} AI  </h1>    
             `);
     }
 
@@ -43,12 +43,12 @@ $(document).ready(function() {
       $("#rockk").css({ "border": "8px solid red", "border-radius": "95px" });
       me++;
       $(".result").html(`
-                <h1 class="display-3"> Y ${me} : ${ai}  AI</h1>    
+                <h1 class="display-3"> You ${me} : ${ai}  AI</h1>    
            `);
     } else if (judge(choice, aiChoice()) === "Tie") {
       $("#paperr").css({ "border": "8px solid blue", "border-radius": "95px" });
       $(".result").html(`
-                <h1 class="display-3"> Y ${me} : ${ai}  AI </h1>  
+                <h1 class="display-3"> You ${me} : ${ai}  AI </h1>  
                 <h1 class="h5">Tie</h1>   
             `);
     } else {
@@ -59,7 +59,7 @@ $(document).ready(function() {
       });
       ai++;
       $(".result").html(`
-                <h1 class="display-3"> Y ${me} : ${ai}  AI </h1>    
+                <h1 class="display-3"> You ${me} : ${ai}  AI </h1>    
             `);
     }
 
@@ -79,7 +79,7 @@ $(document).ready(function() {
       $("#paperr").css({ "border": "8px solid red", "border-radius": "95px" });
       me++;
       $(".result").html(`
-                <h1 class="display-3"> Y ${me} : ${ai}  AI</h1>   
+                <h1 class="display-3"> You ${me} : ${ai}  AI</h1>   
            `);
     } else if (judge(choice, aiChoice()) === "Tie") {
       $("#scissorss").css({
@@ -87,7 +87,7 @@ $(document).ready(function() {
         "border-radius": "95px"
       });
       $(".result").html(`
-                <h1 class="display-3"> Y ${me} : ${ai}  AI </h1>  
+                <h1 class="display-3"> You ${me} : ${ai}  AI </h1>  
                 <p class="h3">Tie</p>    
             `);
     } else {
@@ -95,7 +95,7 @@ $(document).ready(function() {
       $("#rockk").css({ "border": "8px solid green", "border-radius": "95px" });
       ai++;
       $(".result").html(`
-                <h1 class="display-3"> Y ${me} : ${ai}  AI</h1>    
+                <h1 class="display-3"> You ${me} : ${ai}  AI</h1>    
             `);
     }
 
@@ -107,12 +107,18 @@ $(document).ready(function() {
 
   let checkWinner = function(first, second) {
     if (first == 3) {
-      $(".fresult").html(`<h1 class="display-1 won">You WON </h1>`);
-      me = 0;
+      $(".fresult").html(`
+        <h1 class="display-1 won">You WON </h1> 
+        <p class="lead"> Click your next choice to start game again </p>
+      `);
+      me = 0; 
       ai = 0;
       winsound.play();
     } else if (second == 3) {
-      $(".fresult").html(`<h1 class="display-1 lost">You Lost </h1>`);
+      $(".fresult").html(`
+      <h1 class="display-1 lost">You Lost </h1>
+      <p class="lead"> Click your next choice to start game again </p>
+      `);
       me = 0;
       ai = 0;
       losesound.play();
@@ -158,7 +164,7 @@ let judge = function(me, ai) {
       return "AI";
       break;
     default:
-      return "GUGU";
+      return "You Break IT";
   }
 };
 
