@@ -7,7 +7,7 @@ Dead simple rock,paper, scissors game
 
 # History about game
 
-This game was originally created on **December 17, 2018 at Caucasus University Library** during break between lectures. It was my second year and I have just started learning **WEB I**(Web one, this was name of the subject 🤷‍♂️). I was sitting with my two friends and we have no work to do, so I have turned the computer and started practicing for WEB :smile: . I end up writing this rock, paper, scissors game after 35-40 :computer: . This game was by first project on JS so I have decided not to delete this repo and save it as a memory :camera:
+This game was originally created on **December 17, 2018 at Caucasus University Library** during break between lectures. It was my second year and I have just started learning **WEB I**(Web one, this was name of the subject 🤷‍♂️). I was sitting with my two friends and we had no work to do, so I have turned the computer on and started practicing for WEB :smile: . I ended up writing this rock, paper, scissors game after 35-40 :computer: . This game was my first project on JS so I have decided not to delete this repo and save it as a memory :camera:
 
 
 ### Me on December, 2018
