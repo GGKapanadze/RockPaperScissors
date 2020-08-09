@@ -1,7 +1,7 @@
 # Rock, Paper, Scissors Game ✊✋✌
 [![Netlify Status](https://api.netlify.com/api/v1/badges/88959e09-85ab-4467-9294-e91de3622d55/deploy-status)](https://app.netlify.com/sites/rpsg/deploys)
 
-Dead simple rock,paper, scissors game 
+Dead simple rock,paper, scissors game
 
 ---
 
@@ -13,7 +13,5 @@ This game was originally created on **December 17, 2018 at Caucasus University L
 ### Me on December, 2018
 ![Me](https://github.com/GGKapanadze/RockPaperScissors/blob/master/assets/kapo2.jpg)
 
-### Library
+### Library mentioned above
 ![Library](https://github.com/GGKapanadze/RockPaperScissors/blob/master/assets/lib.jpg)
-
-
